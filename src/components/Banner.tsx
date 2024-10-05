@@ -1,6 +1,6 @@
 'use client'
 
-import { sliderOne, sliderTwo, sliderThree, sliderFour } from '@/assets'
+import { sliderOne, sliderTwo, sliderThree } from '@/assets'
 import Image from 'next/image'
 import { useState } from 'react'
 import Slider from 'react-slick'
@@ -9,7 +9,7 @@ import { Clock, Smartphone, Map, MailPlus } from 'lucide-react'
 const Banner = () => {
 	const [dotActive, setDotActive] = useState(0)
 
-	var settings = {
+	const settings = {
 		dots: true,
 		infinite: true,
 		autoplay: true,
@@ -18,10 +18,10 @@ const Banner = () => {
 		arrows: false,
 		fade: false,
 		speed: 2000,
-		beforeChange: (prev: any, next: any) => {
+		beforeChange: (prev: number, next: number) => {
 			setDotActive(next)
 		},
-		appendDots: (dots: any) => (
+		appendDots: (dots: number) => (
 			<div
 				style={{
 					position: 'absolute',
@@ -42,7 +42,7 @@ const Banner = () => {
 				</ul>
 			</div>
 		),
-		customPaging: (i: any) => (
+		customPaging: (i: number) => (
 			<div
 				style={
 					i === dotActive
