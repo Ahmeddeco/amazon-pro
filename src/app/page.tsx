@@ -1,3 +1,9 @@
-export default function Home() {
-	return <main>Home page</main>
+import Banner from '@/components/Banner'
+
+export default function HomePage() {
+	return (
+		<main className=''>
+			<Banner />
+		</main>
+	)
 }
