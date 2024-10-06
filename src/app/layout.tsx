@@ -33,7 +33,7 @@ export default function RootLayout({
 				)}
 			>
 				<Navbar />
-				{children}
+				<main className='min-h-screen'>{children}</main>
 				<Footer />
 				<Analytics />
 			</body>

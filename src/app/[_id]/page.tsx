@@ -21,13 +21,14 @@ export default async function ProductPage({
 
 	return (
 		<Container className='flex gap-10 md:gap-0 items-center flex-col md:flex-row px-4 xl:px-0'>
-			<div className='w-full md:w-1/2 overflow-hidden bg-zinc-50 flex items-center justify-center p-10'>
+			<div className='w-full  md:w-1/2 overflow-hidden bg-zinc-50 flex items-center justify-center p-10'>
 				<Image
 					src={product?.image}
 					alt={product?.title}
 					width={500}
 					height={500}
-					className='transform transition-transform hover:scale-110 duration-500 ease-in-out'
+					priority
+					className='transform transition-transform hover:scale-110 duration-500 ease-in-out h-auto w-auto'
 				/>
 			</div>
 			<div className='w-full md:w-1/2 flex flex-col gap-2'>

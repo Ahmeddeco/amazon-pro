@@ -38,7 +38,7 @@ const Navbar = () => {
 					</ul>
 				</nav>
 				{/* Icons */}
-				<div className='flex items-center gap-x-5'>
+				<nav className='flex items-center gap-x-5'>
 					{/* Heart Icons */}
 					<Link
 						href={'/wishlist'}
@@ -63,7 +63,7 @@ const Navbar = () => {
 						Login
 						<span className='absolute h-px w-full bg-blue-700 left-0 bottom-0 -translate-x-full group-hover:translate-x-0 transition-transform duration-500' />
 					</button>
-				</div>
+				</nav>
 			</div>
 		</header>
 	)
