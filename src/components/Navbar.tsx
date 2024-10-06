@@ -4,17 +4,10 @@ import { usePathname } from 'next/navigation'
 import Logo from './Logo'
 import Link from 'next/link'
 import { Heart, ShoppingBagIcon } from 'lucide-react'
+import { navigation } from '@/constants/data'
 
 const Navbar = () => {
 	const pathname = usePathname()
-
-	const navigation = [
-		{ _id: 910, title: 'Home', href: '/' },
-		{ _id: 911, title: 'phones', href: '/phones' },
-		{ _id: 912, title: 'phone-cases', href: '/phonecases' },
-		{ _id: 913, title: 'watches', href: '/watches' },
-		{ _id: 914, title: 'accessories', href: '/accessories' },
-	]
 
 	return (
 		<header className='w-full h-20 border-b border-b-zinc-500 bg-white/80 text-zinc-600 sticky top-0 z-50 backdrop-blur-2xl'>
