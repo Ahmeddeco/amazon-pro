@@ -16,7 +16,7 @@ const Banner = () => {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
-		fade: false,
+		fade: true,
 		speed: 2000,
 		beforeChange: (prev: number, next: number) => {
 			setDotActive(next)
@@ -26,7 +26,7 @@ const Banner = () => {
 				style={{
 					position: 'absolute',
 					top: '70%',
-					left: '63%',
+					left: '0%',
 					transform: 'translate(0, 0)',
 				}}
 			>

@@ -6,10 +6,10 @@ import { navigation } from '@/constants/data'
 
 const Footer = () => {
 	return (
-		<footer className='bg-darkColor mt-10 py-10 text-zinc-300'>
-			<Container className='flex items-center justify-between'>
+		<footer className='bg-darkColor mt-10 py-10 text-zinc-300 w-screen'>
+			<Container className='flex flex-col md:flex-row md:gap-0 gap-8 items-center justify-between '>
 				<Logo className='text-white ' spanClassName='bg-white text-black' />
-				<ul className='flex gap-6 items-center justify-center'>
+				<ul className='flex gap-6 items-center  justify-center lg:flex-row flex-col'>
 					{navigation.map((item) => (
 						<Link href={item?.href} className='' key={item?._id}>
 							<li className='hover:text-white duration-300'>{item?.title}</li>

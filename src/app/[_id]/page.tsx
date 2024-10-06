@@ -20,7 +20,7 @@ export default async function ProductPage({
 	const product = singleProduct(_id)
 
 	return (
-		<Container className='flex items-center flex-col md:flex-row px-4 xl:px-0'>
+		<Container className='flex gap-10 md:gap-0 items-center flex-col md:flex-row px-4 xl:px-0'>
 			<div className='w-full md:w-1/2 overflow-hidden bg-zinc-50 flex items-center justify-center p-10'>
 				<Image
 					src={product?.image}
