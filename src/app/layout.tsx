@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import { cn } from '@/lib/utils'
 import 'slick-carousel/slick/slick.css'
+import { Analytics } from '@vercel/analytics/react'
 
 import 'slick-carousel/slick/slick-theme.css'
 import Footer from '@/components/Footer'
@@ -33,6 +34,7 @@ export default function RootLayout({
 			>
 				<Navbar />
 				{children}
+				<Analytics />
 				<Footer />
 			</body>
 		</html>
