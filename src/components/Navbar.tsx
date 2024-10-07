@@ -51,7 +51,7 @@ const Navbar = () => {
 					</Link>
 					{/* ShoppingBagIcon Icons */}
 					<Link
-						href={'/wishlist'}
+						href={'/cart'}
 						className='hover:text-black duration-300  group relative'
 					>
 						<ShoppingBagIcon className='w-7 h-7' />
